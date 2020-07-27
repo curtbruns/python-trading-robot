@@ -743,7 +743,7 @@ class PyRobot():
 
                         order_responses.append(order_response)
 
-        elif not sells.empty:
+        if not sells.empty:
 
             # Grab the buy Symbols.
             symbols_list = sells.index.get_level_values(0).to_list()

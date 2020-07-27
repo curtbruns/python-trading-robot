@@ -94,11 +94,11 @@ current_quotes = trading_robot.grab_current_quotes()
 pprint.pprint(current_quotes)
 
 # Let's see if our Microsoft Position is profitable.
-is_msft_porfitable = trading_robot.portfolio.is_profitable(
+is_msft_profitable = trading_robot.portfolio.is_profitable(
     symbol="MSFT",
     current_price=current_quotes['MSFT']['lastPrice']
 )
-print("Is Microsoft Profitable: {answer}".format(answer=is_msft_porfitable))
+print("Is Microsoft Profitable: {answer}".format(answer=is_msft_profitable))
 
 # Let's get the projected Market Value.
 portfolio_summary = trading_robot.portfolio.projected_market_value(
